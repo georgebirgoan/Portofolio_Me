@@ -1,0 +1,33 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.footer span {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.footer a {
+  position: absolute;
+  right: 80px;
+  font-size: 24px;
+  color: inherit; /* Moștenește culoarea pentru a păstra stilul */
+  text-decoration: none; /* Elimină sublinierea implicită */
+  cursor: pointer; /* Asigură-te că cursorul se schimbă la pointer */
+  display: flex; /* Asigură-te că link-ul se dimensionează după conținut */
+  align-items: center; /* Centrarea iconiței vertical */
+}
+
+.footer a:hover {
+  color: #ff6347; /* Culoarea la hover */
+}
+
+.footer i {
+  pointer-events: none; /* Asigură-te că iconița nu preia evenimentele de click */
+}

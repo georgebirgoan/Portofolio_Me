@@ -1,0 +1,95 @@
+.skillsContainer {
+  width: 100%;
+  padding: 20px;
+  min-height: 700px; // Setează o înălțime minimă pentru container
+}
+
+.titleSkill {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  color: #233452; /* Culoare albă pentru text */
+  font-size: 40px; /* Dimensiune font mărită pentru un impact mai mare */
+  font-weight: 700;
+  width: 100%;
+  position: relative; /* Necesare pentru elemente suplimentare */
+  display: inline-block;
+  padding: 10px 20px; /* Spațiere internă */
+  border-radius: 10px; /* Colțuri rotunjite */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Umbră subtilă */
+  text-transform: uppercase; /* Transformă textul în majuscule */
+}
+
+
+.mainContainerSkills {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 10px;
+  margin: 40px;
+  gap: 35px;
+  justify-content: center; // Centrează cardurile pe axa orizontală
+}
+
+.skillSet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title i {
+  font-size: 40px;
+  color: #2196f3;
+}
+
+.title h2 {
+  margin: 10px 0;
+  color: #233452;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.customLine {
+  height: 1px;
+  background-color: rgb(184, 168, 168);
+  margin: 10px 0;
+  width: 200px;
+}
+
+.skillsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 10px;
+  justify-content: center; // Centrează conținutul skillurilor pe axa orizontală
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.skill i {
+  font-size: 20px;
+}
+
+.skill span {
+  white-space: nowrap;
+}

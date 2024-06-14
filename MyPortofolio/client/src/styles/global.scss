@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1.5;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* Elimina marginile implicite pentru liste */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Resetează stilurile pentru imagini */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Resetează stilurile pentru link-uri */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Asigură consistență pentru tabel */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 0;
+    text-align: left;
+  }
+  /* Setează dimensiunea fontului pentru paragrafe */
+h1 {
+    font-size: 2rem; /* sau o altă dimensiune dorită */
+    line-height: 1.5;
+    margin-bottom: 1rem; /* pentru a adăuga un spațiu între paragrafe */
+  }
+  

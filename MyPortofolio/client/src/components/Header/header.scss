@@ -1,0 +1,217 @@
+@import '../../styles/responsive.scss';
+
+
+.navContainer{
+    width: 100%;
+    height: 10vh;
+    background-color: #1d222b;
+}
+
+.navElements{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 30px; 
+}
+
+    .nav-pages {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      gap: 20px;
+      animation: slideLeft 1s ease forwards;
+      
+      @include md {
+        display: none;
+      }
+    
+      a {
+        font-family: 'Montserrat', sans-serif; 
+        font-size: 17px;
+        color: white;
+        position: relative;
+        text-decoration: none;
+        
+        &::after {
+          content: '';
+          display: block;
+          width: 0;
+          height: 2px;
+          background: white;
+          transition: width 0.3s ease;
+          position: absolute;
+          bottom: -5px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+    
+        &:hover {
+          cursor: pointer;
+    
+          &::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+    
+    
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  img {
+    margin-bottom: 15px;
+    width: 45px;
+    height: 45px;
+    animation: slideRight 1s ease forwards;
+  }
+
+  span {
+    color: white;
+    font-size: 25px;
+    font-family: 'Tiny', 'MontSerrat';
+    animation: slideLeft 1s ease forwards;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: white;
+      transition: width 0.3s ease;
+      position: absolute;
+      bottom: -5px; // Poziționează linia sub text
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+/*left side container*/
+.leftsideContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    background-color: #1d222b;
+    color: #fff;
+    padding-top: 60px; /* Înălțimea antetului meniului */
+    z-index: 100;
+  }
+  
+  .menu-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px; 
+    background-color: #1d222b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+
+    .iesire{
+        font-size:16px;
+        font-weight: 600;
+     }
+  }
+
+.left{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+    img{
+        margin-bottom: 7px;
+        width: 45px;
+        height: 45px;
+    }
+    
+    span {
+       margin: 0;
+       font-size: 22px;
+       font-weight: 600;
+       font-family: 'Oswald', sans-serif;
+     }
+
+   
+  }
+  
+  .menu-content {
+    padding: 20px;
+  }
+  
+  .menu-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-content ul li {
+    margin-bottom: 15px;
+  }
+  
+  .menu-content ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .menu-content ul li a:hover {
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+//   responsive menu
+.hamburger{
+    margin-right: 20px;
+
+    @include xl{
+        display: none;
+    }
+    @include xxl{
+        display: none;
+    }
+
+    @include md{
+        display: flex;
+    }
+
+    img{
+        background-color: rgb(255, 255, 255);
+        width: 15px;
+        height: 15px;
+    }
+}
+
+  
+  
