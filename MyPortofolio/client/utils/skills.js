@@ -3,12 +3,13 @@ const skills = [
     icon: "bx bxl-html5",
     title: "FrontEnd",
     skills: [
-      { name: "HTML", icon: "bx bxl-html5", color: "#E34F26" },
+      { name: "HTML 5", icon: "bx bxl-html5", color: "#E34F26" },
       { name: "CSS", icon: "bx bxl-css3", color: "#1572B6" },
+      { name: "Chakra", icon: "bx bx-cloud-lightning", color: "#40E0D0" },
       { name: "JavaScript", icon: "bx bxl-javascript", color: "#F7DF1E" },
+      { name: "TypeScript", icon: "bx bxl-typescript", color: "#3178C6" },
       { name: "React", icon: "bx bxl-react", color: "#61DAFB" },
       { name: "Redux", icon: "bx bxl-redux", color: "#764ABC" },
-      { name: "TypeScript", icon: "bx bxl-typescript", color: "#3178C6" },
     ],
   },
   {
