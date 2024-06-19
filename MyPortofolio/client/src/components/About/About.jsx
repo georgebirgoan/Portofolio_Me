@@ -24,7 +24,7 @@ export default function About() {
 
           </div>
           <div className="butonCv">
-            <a className='bt' href='/Cv_Folder/Cv-Birgoan George.docx' download>Download CV</a>
+            <a className='bt' href='/Cv_Folder/Cv-Birgoan George.pdf' download>Download CV</a>
           </div>
         </div>
       </div>
