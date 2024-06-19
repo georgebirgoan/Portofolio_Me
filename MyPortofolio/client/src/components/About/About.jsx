@@ -1,5 +1,5 @@
 import './about.scss';
-import aboutImg from '../../img/me2.png';
+import aboutImg from '../../img/poza_about.jpg';
 
 export default function About() {
   return (
@@ -13,14 +13,14 @@ export default function About() {
         </div>
         <div className="rightAbout">
           <div className="textAbout">
-          <h1>
+          <p>
             I'm a front-end web developer currently in my second year at Stefan cel Mare University of Suceava. 
             My journey into programming began out of curiosity and the challenge of constantly pushing the 
             boundaries in various fields. This curiosity quickly turned into a passion as 
             I discovered the limitless possibilities of web development. 
             I thrive on creating innovative and user-friendly web applications,
              always striving to improve and learn new things.
-          </h1>
+          </p>
 
           </div>
           <div className="butonCv">

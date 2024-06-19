@@ -50,8 +50,8 @@ export default function Contact() {
         </div>
         <div className="socialIcons">
           <a href="mailto:georgebirgoan@gmail.com"><i className='bx bxs-envelope'></i>Email</a>
-          <a href="https://github.com/"><i className='bx bxl-github' ></i>GitHub</a>
-          <a href="https://www.linkedin.com/feed/"><i className='bx bxl-linkedin' ></i>Linkedin</a>
+          <a href="https://github.com/georgebirgoan?tab=repositories"><i className='bx bxl-github' ></i>GitHub</a>
+          <a href="https://www.linkedin.com/in/george-b%C3%AErgoan-b74b90289/"><i className='bx bxl-linkedin' ></i>Linkedin</a>
         </div>
       </div>
       </div>

@@ -11,7 +11,6 @@ export default function Skills() {
       <div className="mainContainerSkills">
         {skills.map((skillSet, index) => (
           <div key={index} className="skillSet">
-
             <div className="title">
               <i className={skillSet.icon}></i>
               <h2>{skillSet.title}</h2>
@@ -21,7 +20,11 @@ export default function Skills() {
             <div className="skillsList">
               {skillSet.skills.map((skill, i) => (
                 <div key={i} className="skill" style={{ backgroundColor: skill.color }}>
-                  <i className={skill.icon}></i>
+                  {skill.type === 'class' ? (
+                    <i className={skill.icon}></i>
+                  ) : (
+                    <img src={skill.icon} alt={skill.name} className="iconImage" />
+                  )}
                   <span>{skill.name}</span>
                 </div>
               ))}

@@ -8,7 +8,7 @@
     grid-template-rows: auto;
     height: 100vh;
     width: 100%;
-    padding: 0px 10px; 
+    padding: 0px 10px;
     margin-bottom: 30px;
 
 
@@ -16,66 +16,60 @@
         grid-template-columns: 1fr;
         height: auto;
 
-        .heroImage img {
-            grid-row: 1;
-        }
-
-    }
-}
 
 
-
-@include md {
-    .heroImage {
-        order: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .heroImage img {
-        width: 280px;;
-        height: 370px;
-        animation: slideLeft 1s ease forwards;
-
-    }
-  
-    @keyframes slideLeft {
-        0% {
-          transform: translateX(100px);
-          opacity: 0;
-        }
-        100% {
-          transform: translateX(0px);
-          opacity: 1;
-        }
-      }
-
-    .ledtSide {
-        order: 2;
-
-        .heroText h1 {
+        .heroImage {
+            order: 1;
             display: flex;
-            align-self: center;
-            justify-self: center;
-            color: black;
-            font-weight: 800;
-            margin-bottom: 15px;
-        }
-
-
-        .butoane {
-            display: flex;
-            justify-content: center;
             align-items: center;
-            padding: 10px 10px;
-            margin: 20px 0px;
-            gap: 25px;
-            order: 3;
-
+            justify-content: center;
         }
-    }
 
+        .heroImage img {
+            border-radius: 20px;
+            max-width: 60%;
+            max-height: 60%;
+            animation: slideLeft 1s ease forwards;
+        }
+
+        @keyframes slideLeft {
+            0% {
+                transform: translateX(100px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(0px);
+                opacity: 1;
+            }
+        }
+
+        .ledtSide {
+            order: 2;
+
+            .heroText h1 {
+                display: flex;
+                align-self: center;
+                justify-self: center;
+                color: black;
+                font-weight: 800;
+                margin-bottom: 15px;
+            }
+
+
+            .butoane {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 10px;
+                margin: 20px 0px;
+                gap: 25px;
+                order: 3;
+
+            }
+        }
+
+    }
 }
 
 
@@ -119,7 +113,7 @@
     padding: 5px 5px;
     color: rgb(168, 168, 168);
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 .butoane {
@@ -170,7 +164,7 @@
 }
 
 .butoane :nth-child(2) {
-        transition: font-size 1s ease,
+    transition: font-size 1s ease,
         background-color 0.5s ease;
 }
 
@@ -184,8 +178,9 @@
 }
 
 .heroImage img {
-    max-width: 80%;
-    max-height: 100%;
+    border-radius: 20px;
+    max-width: 50%;
+    max-height: 50%;
     object-fit: contain; // Asigură-te că imaginea se potrivește în container fără să-și modifice proporțiile
 
 }

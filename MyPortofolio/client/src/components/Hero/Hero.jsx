@@ -1,5 +1,5 @@
 import './hero.scss';
-import main_img from '../../img/main-img.png'
+import main_img from '../../img/hero_img.jpg'
 import { useEffect } from 'react';
 import {handleScroll} from '../../../utils/handleScroll';
 
