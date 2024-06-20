@@ -21,7 +21,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 30px 0px;
-    
+  
+
+
+
+
+
+
+
     @include md {
         grid-template-columns: 1fr;
         height: auto;
@@ -31,10 +38,18 @@
             margin-left: 30px;
         }
 
+        .imgAbout{
+            display: flex;
+            align-items: center;
+            padding: 20px 20px;
+            justify-content: center;
+        }
+
         .imgAbout img {
             display: flex;
             max-width: 65%;
-            max-height: 70%;
+            max-height: 85%;
+            margin: 0;
         }
 
         .butonCv {
@@ -62,7 +77,7 @@
         .imgAbout img {
             display: flex;
             max-width: 65%;
-            max-height: 70%;
+            max-height: 85%;
         }
 
         .butonCv {

@@ -11,7 +11,28 @@
     padding: 0px 10px;
     margin-bottom: 30px;
 
+    @include sm{
+        grid-template-columns: 1fr;
+        height: auto;
 
+
+
+        .heroImage {
+            order: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .heroImage img {
+            border-radius: 20px;
+            max-width: 65%;
+            max-height: 70%;
+            animation: slideLeft 1s ease forwards;
+        }
+
+
+    }
     @include md {
         grid-template-columns: 1fr;
         height: auto;
