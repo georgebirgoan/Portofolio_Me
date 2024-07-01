@@ -21,11 +21,12 @@ export default function About() {
             I thrive on creating innovative and user-friendly web applications,
              always striving to improve and learn new things.
           </p>
-
           </div>
           <div className="butonCv">
-            <a className='bt' href='/Cv_Folder/Cv-Birgoan George.pdf' download>Download CV</a>
+            <a className='bt' href='/Birgoan George-CV.pdf' download>Download CV</a>
           </div>
+
+
         </div>
       </div>
     </div>
